@@ -1,0 +1,91 @@
+h1{
+    color: rgb(253, 253, 253);
+    }
+    p{
+      color: rgb(136, 227, 255);
+    }
+    #logo{
+      width: 100px;
+      padding: 0px;
+      padding-top: 0px;
+    }
+    body{
+      
+      background-color: rgb(255, 255, 255);
+    }
+    .navbar{
+      display: flex;
+      padding: 0px;
+      flex-wrap: wrap;
+    background: #1c47a4;
+    background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
+    background: -moz-linear-gradient(left, #1e1ca4 0%, #2388CB 50%, #1d7fcf 100%);
+    background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
+    font-family: "Gadget, sans-serif";
+    }
+    
+    ul{
+      display: flex;
+      list-style-type: none;
+      flex-wrap: wrap;
+      
+    }
+    li{
+    display: flex;
+      padding: 10px;
+    }
+    a{
+      color: rgb(160, 194, 224);
+    }
+    
+     
+    
+    .text{
+      padding: 7px;
+      font-size: 100%;
+      align-items: flex-start;
+    }
+    .baner img{
+      padding: 0px;
+      padding-top: 7px;
+    width: 100%;
+    border-radius: 0px;
+    
+    }
+    .perfil{
+      display:flex;
+      flex-wrap: wrap;
+      border-radius: 0px;
+    }
+    section{
+      background: #1c47a4;
+    background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
+    background: -moz-linear-gradient(left, #1e1ca4 0%, #2388CB 50%, #1d7fcf 100%);
+    background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
+    font-family: "Gadget, sans-serif";
+      border-style: solid;
+      border-color: cadetblue;
+      border-radius: 0px;
+      border-width: 1px;
+      margin-bottom: 5px;
+      padding: 20px;
+      margin: 6px;
+    }
+    #acerca{
+      margin: 7px;
+     
+    }
+    
+    .col-1{
+      padding: 10px;
+    }
+    .col-2{
+      padding: 10px;
+    }
+    .container-fluid{
+      padding: 0px;
+      font-size: 0px;
+    }
+    #brand{
+    font-size: 0px;
+    }
