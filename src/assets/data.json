@@ -1,0 +1,16 @@
+{
+	"position": "desarrolador web full Stack",
+	"name": "Jorge Gabriel Medina",
+	"age": 31,
+	"nationality": "Argentina",
+	"home": "Neuquen",
+	"banner": "assets/IMG BANNER.png",
+
+
+	"education": {
+		"school": "IUPA",
+		"carrer": "Diplomatura full stack"
+
+
+	}
+}
