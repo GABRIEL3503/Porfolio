@@ -7,10 +7,25 @@
 	"banner": "assets/IMG BANNER.png",
 
 
-	"education": {
-		"school": "IUPA",
-		"carrer": "Diplomatura full stack"
+	"education": [{
+		"school": "IUPAA",
+		"career": "Diplomatura full stack",
+        "img":  "assets/iupa-blanco.png",
+        "start": "2020",
+        "end":"2021"
+	}, {
+		"school": "Argentina Programa-Yo Programo",
+		"img":  "assets/descarga.png",
+        "career": "Desarrollador web full stack Jr ",
+        "start": "2021" ,
+        "end":"2022"
+        }, 
+	 {
+		"school": "Udemy",
+		"career": "Bootstrap 5 desde cero + HTML, CSS",
+        "img": "assets/images.png",
+        "start": "2021",
+        "end":"2022"
+	}]
 
-
-	}
 }
