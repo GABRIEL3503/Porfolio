@@ -7,6 +7,7 @@ import { PorfolioService } from 'src/app/services/porfolio.service';
 })
 export class BannerComponent implements OnInit {
 miPorfolio:any;
+usuarioAutenticado: boolean =true;
   constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {

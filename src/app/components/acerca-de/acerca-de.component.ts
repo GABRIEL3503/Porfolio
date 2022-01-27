@@ -7,7 +7,7 @@ import { PorfolioService } from 'src/app/services/porfolio.service';
 })
 export class AcercaDeComponent implements OnInit{
 miPorfolio:any;
-
+usuarioAutenticado: boolean =true;
 
   constructor(private datosPorfolio:PorfolioService) { }
 

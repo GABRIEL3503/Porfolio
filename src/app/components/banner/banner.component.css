@@ -34,3 +34,18 @@ font-weight:normal
   
   color:rgb(96, 170, 240)
 }
+.contenedor .btn{
+    position: absolute;
+    top: 50px;
+    left: 710px;
+    
+}
+
+.editar {
+  color: #fafafa;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+}
+.editar:hover {
+  color: rgb(93, 186, 240);
+}
