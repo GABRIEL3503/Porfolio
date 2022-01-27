@@ -32,33 +32,34 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form [formGroup]= 'form'>
           <div class="mb-3">
-            <label for="" class="form-label">Puesto</label>
-            <input type="" class="form-control" id="" aria-describedby="emailHelp">
+            <label for="" class="form-label">Posición</label>
+            <input type="" class="form-control" id="posicionAcercaDe" formControlName= "posicionAcercaDe">
             
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Nombre</label>
-            <input type="" class="form-control" id="nombre">
+            <input type="" class="form-control" id="name" formControlName= "name">
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Edad</label>
-            <input type="" class="form-control" id="edad">
+            <input type="" class="form-control" id="age" formControlName= "age">
             <div class="mb-3">
               <label for="" class="form-label">Nacionalidad</label>
-              <input type="" class="form-control" id="nacionalidad">
+              <input type="" class="form-control" id="nationality" formControlName= "nationality">
             </div>
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Residencia</label>
-            <input type="" class="form-control" id="">
+            <input type="" class="form-control" id="residence" formControlName= "residence">
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-primary" 
+        (click)="guardarAcerca()">Guardar</button>
       </div>
     </div>
   </div>

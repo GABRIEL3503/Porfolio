@@ -32,19 +32,22 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form>
+            <form [formGroup]= 'form'>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" id="nombreBanner1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="nombreBanner1" formControlName= "nombreBanner1">
                     <label for="exampleInputEmail1" class="form-label">Apellido</label>
-                  <input type="email" class="form-control" id="apellidooBanner1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="apellidooBanner1"  formControlName= "apellidooBanner1">
                     
-                  <label for="exampleInputEmail1" class="form-label">Puesto</label>
-                  <input type="email" class="form-control" id="puestoBanner1" aria-describedby="emailHelp">
+                  <label for="exampleInputEmail1" class="form-label">Posicion</label>
+                  <input type="" class="form-control" 
+                  formControlName= "posicionBanner1" id="posicionBanner1">
+
+                  <label for="exampleInputEmail1" class="form-label">Posicion2</label>
+                  <input type="" class="form-control" id="posicionBanner2"  formControlName= "posicionBanner2">
                   
-                 
-                  <label for="exampleInputPassword1" class="form-label">Id de la Imagen</label>
-                  <input type="password" class="form-control" id="IdDeLaImagen">
+                  <label for="exampleInputPassword1" class="form-label"> Url de la Imagen</label>
+                  <input type="" class="form-control" id="UrlDeLaImagen"   formControlName= "UrlDeLaImagen" >
                 </div>
               </form>
         </div>
