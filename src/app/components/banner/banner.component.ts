@@ -19,7 +19,7 @@ form!:any;
     apellidooBanner1:["", [Validators.required]],
     posicionBanner1:["", [Validators.required]],
     posicionBanner2:["", [Validators.required]],
-    UrlDeLaImagen:["htpps://", [Validators.required, Validators.pattern('https?://.+')]],
+    UrlDeLaImagen:["https://", [Validators.required, Validators.pattern('https?://.+')]],
   })
  
    }
@@ -30,6 +30,32 @@ form!:any;
   })
   }
   guardarBanner(){
-    
+    if (this.form.valid){
+      this.form.reset();
+      document.getElementById("cerrarModalBanner")?.click();
+    }
+    else{
+      alert("hay errores");
+      this.form.markAllAsTouched();
+
+    }
   }
+
+  get nombreBanner1(){
+    return this.form.get("nombreBanner1")
+  }
+
+  get apellidooBanner1(){
+    return this.form.get("apellidooBanner1")
+  }
+  get posicionBanner1()
+{
+  return this.form.get("posicionBanner1")
+}
+ get posicionBanner2(){
+   return this.form.get("posicionBanner2")
+ }
+ get UrlDeLaImagen(){
+   return this.form.get("UrlDeLaImagen")
+ }
 }

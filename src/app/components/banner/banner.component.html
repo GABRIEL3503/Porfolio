@@ -34,27 +34,75 @@
         </div>
         <div class="modal-body">
             <form [formGroup]= 'form'>
+
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                    <label for="nombreBanner1" class="form-label">Nombre</label>
                     <input type="email" class="form-control" id="nombreBanner1" formControlName= "nombreBanner1">
-                    <label for="exampleInputEmail1" class="form-label">Apellido</label>
-                  <input type="email" class="form-control" id="apellidooBanner1"  formControlName= "apellidooBanner1">
                     
-                  <label for="exampleInputEmail1" class="form-label">Posicion</label>
+                    <div *ngIf="nombreBanner1.invalid && (nombreBanner1.dirty || nombreBanner1.touched)"
+                    class="alert">
+                    <div *ngIf="nombreBanner1.errors?.['required']" class="text-danger">
+                    Name is required.
+                    </div>
+                    </div>
+
+                </div>
+
+                    <div class="mb-3">
+                    <label for="apellidooBanner1" class="form-label">Apellido</label>
+                  <input type="email" class="form-control" id="apellidooBanner1"  formControlName= "apellidooBanner1">
+
+                  <div *ngIf="apellidooBanner1.invalid && (apellidooBanner1.dirty || apellidooBanner1.touched)"
+                  class="alert">
+                  <div *ngIf="apellidooBanner1.errors?.['required']" class="text-danger">
+                  Last Name is required.
+                  </div>
+                  </div>
+                    </div>
+
+                    <div class="mb-3">
+                  <label for="posicionBanner1" class="form-label">Posicion</label>
                   <input type="" class="form-control" 
                   formControlName= "posicionBanner1" id="posicionBanner1">
-
-                  <label for="exampleInputEmail1" class="form-label">Posicion2</label>
+                    
+                    <div *ngIf="posicionBanner1.invalid && (posicionBanner1.dirty || posicionBanner1.touched)"
+                    class="alert">
+                    <div *ngIf="posicionBanner1.errors?.['required']" class="text-danger">
+                    Position is required.
+                    </div>
+                    </div>
+                  </div>
+                    <div class="mb-3">
+                  <label for="posicionBanner2" class="form-label">Posicion2</label>
                   <input type="" class="form-control" id="posicionBanner2"  formControlName= "posicionBanner2">
-                  
-                  <label for="exampleInputPassword1" class="form-label"> Url de la Imagen</label>
+
+                  <div *ngIf="posicionBanner2.invalid && (posicionBanner2.dirty || posicionBanner2.touched)"
+                  class="alert">
+                  <div *ngIf="posicionBanner2.errors?.['required']" class="text-danger">
+                  Position is required.
+                  </div>
+                    </div>
+                    </div>
+
+                    <div class="mb-3">
+                  <label for="UrlDeLaImagen" class="form-label"> Url de la Imagen</label>
                   <input type="" class="form-control" id="UrlDeLaImagen"   formControlName= "UrlDeLaImagen" >
+
+                  <div *ngIf="UrlDeLaImagen.invalid && (UrlDeLaImagen.dirty || UrlDeLaImagen.touched)"
+                  class="alert">
+                  <div *ngIf="UrlDeLaImagen.errors?.['required']"class="text-danger">
+                  Url is required.
+                  </div>
+                  <div *ngIf="UrlDeLaImagen.errors?.['pattern']"class="text-danger">
+                    Format Url is  not valid.
+                    </div>
+                    </div>
                 </div>
               </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" id ="cerrarModalBanner"class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+          <button type="button" class="btn btn-primary" (click)="guardarBanner()">Guardar</button>
         </div>
       </div>
     </div>
