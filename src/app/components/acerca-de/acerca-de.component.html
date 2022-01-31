@@ -33,31 +33,67 @@
       </div>
       <div class="modal-body">
         <form [formGroup]= 'form'>
+
           <div class="mb-3">
             <label for="" class="form-label">Posición</label>
             <input type="" class="form-control" id="posicionAcercaDe" formControlName= "posicionAcercaDe">
-            
+            <div *ngIf="posicionAcercaDe.invalid && (posicionAcercaDe.dirty || posicionAcercaDe.touched)"
+            class="alert">
+            <div *ngIf="posicionAcercaDe.errors?.['required']" class="text-danger">
+            Position is required.
+            </div>
+            </div>
           </div>
+
           <div class="mb-3">
             <label for="" class="form-label">Nombre</label>
             <input type="" class="form-control" id="name" formControlName= "name">
+
+            <div *ngIf="name.invalid && (name.dirty || name.touched)"
+            class="alert">
+            <div *ngIf="name.errors?.['required']" class="text-danger">
+            Name is required.
+            </div>
+            </div>
           </div>
+
           <div class="mb-3">
             <label for="" class="form-label">Edad</label>
             <input type="" class="form-control" id="age" formControlName= "age">
+
+            <div *ngIf="age.invalid && (age.dirty || age.touched)"
+            class="alert">
+            <div *ngIf="age.errors?.['required']" class="text-danger">
+            Age is required.
+            </div>
+            </div>
           </div>
+
             <div class="mb-3">
               <label for="" class="form-label">Nacionalidad</label>
               <input type="" class="form-control" id="nationality" formControlName= "nationality">
+              <div *ngIf="nationality.invalid && (nationality.dirty || nationality.touched)"
+              class="alert">
+              <div *ngIf="nationality.errors?.['required']" class="text-danger">
+                Nationality is required.
+              </div>
+              </div>
           </div>
+
           <div class="mb-3">
             <label for="" class="form-label">Residencia</label>
             <input type="" class="form-control" id="residence" formControlName= "residence">
+            <div *ngIf="residence.invalid && (residence.dirty || residence.touched)"
+              class="alert">
+              <div *ngIf="residence.errors?.['required']" class="text-danger">
+                Residence is required.
+              </div>
+              </div>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+        <button type="button" id="cerrarModalAcerca" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
         <button type="button" class="btn btn-primary" 
         (click)="guardarAcerca()">Guardar</button>
       </div>

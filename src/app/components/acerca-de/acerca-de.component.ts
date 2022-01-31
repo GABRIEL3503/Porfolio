@@ -9,15 +9,14 @@ import { PorfolioService } from 'src/app/services/porfolio.service';
 export class AcercaDeComponent implements OnInit{
 miPorfolio:any;
 usuarioAutenticado: boolean =true;
-form!:any;
+form:any;
 
 
   constructor(private datosPorfolio:PorfolioService,private formBuilder:FormBuilder ) {
     this.form=this.formBuilder.group({
-      posicionAcercaDe:[""],
+      posicionAcercaDe:["", [Validators.required]],
       name:["", [Validators.required]],
-      lastName:["",[Validators.required]],
-      age:[""],
+      age:["", [Validators.required]],
       nationality:["",[Validators.required]],
       residence:["",[Validators.required]],
     })
@@ -25,13 +24,35 @@ form!:any;
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
       this.miPorfolio=data;
     });
   }
 
   guardarAcerca(){
-    alert("se esta ejecutando");
+    if (this.form.valid){
+      this.form.reset();
+      document.getElementById("cerrarModalAcerca")?.click();
+    }
+    else{
+      alert("Hay errores");
+      this.form.markAllAsTouched();
+
+    }
+  }
+  get name(){
+    return this.form.get("name")
   }
   
+  get posicionAcercaDe(){
+    return this.form.get("posicionAcercaDe")
+  }
+  get age(){
+    return this.form.get("age")
+  }
+ get nationality(){
+   return this.form.get("nationality")
+ }
+ get residence(){
+   return this.form.get("residence")
+ }
 }
