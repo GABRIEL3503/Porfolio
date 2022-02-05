@@ -16,7 +16,6 @@ h2 {
   background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
   background: -moz-linear-gradient(left, #1e1ca4 0%, #2388CB 50%, #1d7fcf 100%);
   background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
-  font-family: "Gadget, sans-serif";
     border-style: solid;
     border-color: cadetblue;
     border-radius: 0px;
@@ -32,7 +31,5 @@ h2 {
   }
   kbd{
     color:rgb(149, 193, 231);
-    background-color:#062aa133;
-    font-family: "Gadget, sans-serif";
-  }
+    background-color:#062aa133;  }
   *{list-style:none;}
