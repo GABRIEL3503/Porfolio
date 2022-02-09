@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GraficosComponent } from './components/graficos/graficos.component';
+import { GaleryComponent } from './components/galery/galery.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { GraficosComponent } from './components/graficos/graficos.component';
     AcercaDeComponent,
     FormacionComponent,
     FooterComponent,
-    GraficosComponent
+    GraficosComponent,
+    GaleryComponent
   ],
   imports: [
     BrowserModule,
