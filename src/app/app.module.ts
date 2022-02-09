@@ -10,6 +10,7 @@ import { FormacionComponent } from './components/formacion/formacion.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { GraficosComponent } from './components/graficos/graficos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BannerComponent,
     AcercaDeComponent,
     FormacionComponent,
-    FooterComponent
+    FooterComponent,
+    GraficosComponent
   ],
   imports: [
     BrowserModule,
