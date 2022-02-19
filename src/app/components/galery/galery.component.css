@@ -6,9 +6,9 @@ section{
     border-radius: 0px;
     border-width: 1px;
     background: #bacaec;
-    background: -webkit-linear-gradient(left, #8e9fff 0%, #2388CB 50%, #2e80dd 100%);
-    background: -moz-linear-gradient(left, #8e9fff 0%, #2388CB 50%, #1d7fcf 100%);
-    background: -webkit-linear-gradient(left, #8e9fff 0%, #2388CB 50%, #2e80dd 100%);
+    background: -webkit-linear-gradient(left,  #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
+    background: -moz-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #1d7fcf 100%);
+    background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
 }
 
     .container{
@@ -17,4 +17,7 @@ section{
     }
     img{
         padding: 7px;
+    }
+    #demo{
+        padding: 50px;
     }

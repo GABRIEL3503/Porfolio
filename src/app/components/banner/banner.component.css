@@ -1,6 +1,4 @@
-*{
-  font-family: 'Merriweather Sans ' 'sans-serif';
-}
+
 .baner img{
   display: flex;
     padding: 0px;
@@ -11,6 +9,7 @@
 
 }
 .contenedor{
+ 
   display: flex;
   flex-wrap: wrap;
   position: relative;
