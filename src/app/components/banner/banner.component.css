@@ -32,7 +32,7 @@ font-weight:normal
 
 }
 .centrado span{
- 
+ font-size: 32px;
   
   color:rgb(96, 170, 240)
 }
@@ -41,6 +41,9 @@ font-weight:normal
     top: 35%;
     left: 15%;
     
+}
+.text{
+  font-size:32px;
 }
 
 .editar {

@@ -1,14 +1,18 @@
-h2 {
+h2 { 
+  font-size: 24px ;
     color: rgb(149, 193, 231);
   }
    h3{
+    font-size: 18px ;
   color: rgb(253, 253, 253);
   
     text-shadow: rgb(62, 160, 224) 0 -1px 4px, rgb(80, 150, 207) 0 -2px 10px, #0059ff 0 -10px 20px, rgb(0, 132, 255) 0 -18px 40px;
     }
   
   h1{
-    color: rgb(136, 227, 255);
+    font-size: 24px ;
+    color: rgb(247, 247, 247);
+    text-shadow: rgb(62, 160, 224) 0 -1px 4px, rgb(80, 150, 207) 0 -2px 10px, #0059ff 0 -10px 20px, rgb(0, 132, 255) 0 -18px 40px;
     
   }
   section{
@@ -30,6 +34,17 @@ h2 {
     border: 0px;
   }
   kbd{
-    color:rgb(149, 193, 231);
-    background-color:#062aa133;  }
-  *{list-style:none;}
+    color:rgb(245, 245, 245);
+    background-color:#062aa133;  
+  }
+  *{list-style:none;
+  }
+  img{
+    width: 100px;
+  }
+  .bi-arrow-up-right-square-fill{
+padding-top: 0px;
+  }
+  svg{
+    color:#29acf8
+  }

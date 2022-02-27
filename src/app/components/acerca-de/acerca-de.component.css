@@ -18,16 +18,19 @@ section{
    
   }
   h2 {
+    font-size: 24px;
     color: rgb(149, 193, 231);
   }
    h3{
+   font-size:  18px;
   color: rgb(253, 253, 253);
   
     text-shadow: rgb(62, 160, 224) 0 -1px 4px, rgb(80, 150, 207) 0 -2px 10px, #0059ff 0 -10px 20px, rgb(0, 132, 255) 0 -18px 40px;
     }
   
   h1{
-    color: rgb(136, 227, 255);}
+    font-size: 24px;
+    color: rgb(255, 255, 255);}
     .editar {
       color: #fafafa;
       background-color: rgba(255, 255, 255, 0);
@@ -36,4 +39,10 @@ section{
     .editar:hover {
       color: rgb(93, 186, 240);
     }
-    
+    .font1{
+      text-shadow: rgb(62, 160, 224) 0 -1px 4px, rgb(80, 150, 207) 0 -2px 10px, #0059ff 0 -10px 20px, rgb(0, 132, 255) 0 -18px 40px;
+    }
+
+    svg{
+      color:#29acf8
+    }

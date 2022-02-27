@@ -1,5 +1,5 @@
 {
-	"position": "Desarrolador web full Stack",
+	"position": "Me gusta dedicar tiempo a aprender, considero que haber superado los 30 años suma la experiencia de haber trabajado en equipo, de darle valor a las oportunidades ser  responsable y  aprovechar lo qeu puedo aprender de los que mas expeiencia tienen.Aportar a un proyecto y  avanzar en el desarrollo de industria it es un camino que recien comienza para mi y es un desafio que emprendo con mucho entusiasmo de ampliar mi conocimiento",
 	"name": "Jorge Gabriel Medina",
 	"age": 31,
 	"nationality": "Argentina",
@@ -14,7 +14,7 @@
 
 	"education": [{
 		"school": "IUPA",
-		"career": "Diplomatura full stack",
+		"career": "Diplomatura programación web full stack",
         "img":  "assets/iupa-blanco.png",
         "start": "2020",
         "end":"2021"
