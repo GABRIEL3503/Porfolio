@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PorfolioService } from 'src/app/services/porfolio.service';
+import * as AOS from 'aos';
 @Component({
   selector: 'app-formacion',
   templateUrl: './formacion.component.html',
@@ -12,6 +13,10 @@ educacionList: any;
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
       this.educacionList=data.education;
+    });
+    AOS.init({
+      offset:400,
+      duration: 1700,
     });
   }
 
