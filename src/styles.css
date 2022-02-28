@@ -11,3 +11,6 @@
     .font1{
             font-family: 'Merriweather Sans ' 'sans-serif';
     }
+    *{
+        margin:0px
+    }

@@ -1,3 +1,4 @@
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -21,7 +22,8 @@ import { GaleryComponent } from './components/galery/galery.component';
     FormacionComponent,
     FooterComponent,
     GraficosComponent,
-    GaleryComponent
+    GaleryComponent,
+    HabilidadesComponent
   ],
   imports: [
     BrowserModule,

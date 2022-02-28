@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  margin-right: 0px;
+}
 h2 { 
   font-size: 24px ;
     color: rgb(149, 193, 231);
