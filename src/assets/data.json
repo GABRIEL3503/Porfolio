@@ -13,24 +13,31 @@
 
 
 	"education": [{
-		"school": "PATAGONIAN ACADEMY",
-		"career": "Diplomatura programación web full stack",
+		"school": "PATAGONIAN ACADEMY DIPLOMATURA PROGRAMACIÓN WEB FULL STACK",
+		"career": "Participe durenta 6 meses,no finalizé  la diplomatura, pero adquiri las bases que me premiten aprender nuevas erramientas y lenguajes con fluidez",
         "img":  "assets/patagonian.png",
         "start": "2020",
         "end":"2021"
 	}, {
-		"school": "Argentina Programa-Yo Programo",
+		"school": "Argentina Programa-Yo Programo DESARROLLADOR  wEB FULLSTACK JR",
 		"img":  "assets/descarga.png",
-        "career": "Desarrollador web full stack Jr ",
+        "career": " Participé y finalizé del programa diseñando  una pagina web porfolio responsiva completa",
         "start": "2021" ,
         "end":"2022"
         }, 
 	 {
-		"school": "Udemy",
-		"career": "Bootstrap 5 desde cero + HTML, CSS",
+		"school": "UDEMY ",
+		"career": "Uno de las plataformas de calidad donde puedo saciar mi curiosidad y aprender nuevas tecnlogias",
         "img": "assets/images.png",
         "start": "2021",
         "end":"2022"
-	}]
+	},
+	{
+		"school": "INGLES",
+		"img":  "assets/descarga.png",
+        "career": " El ingles es un idioma que me gusta mucho y del cual intento aprender constantemente  leyendo docuemntacion charlando con personas nativas o viendo peliculas en su idioma original, aun me falta mucho por aprender para poder expresarme con fluidez y me encuentro dispuesto a hacerlo",
+        "start": "2021" ,
+        "end":"2022"
+        } ]
 
 }
