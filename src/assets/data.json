@@ -13,9 +13,9 @@
 
 
 	"education": [{
-		"school": "IUPA",
+		"school": "PATAGONIAN ACADEMY",
 		"career": "Diplomatura programación web full stack",
-        "img":  "assets/iupa-blanco.png",
+        "img":  "assets/patagonian.png",
         "start": "2020",
         "end":"2021"
 	}, {

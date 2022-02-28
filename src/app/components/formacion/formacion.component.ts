@@ -16,7 +16,7 @@ educacionList: any;
     });
     AOS.init({
       offset:400,
-      duration: 1900,
+      duration: 1700,
     });
   }
 
