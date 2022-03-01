@@ -152,3 +152,6 @@ P{
     .card:nth-child(1) .sv circle:nth-child(2){
       stroke-dashoffset: calc(440px - (440px * 10) / 100) ;
     }
+    svg{
+     color: #8fd6ff
+    }

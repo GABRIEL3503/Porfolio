@@ -1,9 +1,10 @@
 {
-	"position": "Me gusta dedicar tiempo a aprender, considero que haber superado los 30 años suma la experiencia de haber trabajado en equipo, de darle valor a las oportunidades ser  responsable y  aprovechar lo qeu puedo aprender de los que mas expeiencia tienen.Aportar a un proyecto y  avanzar en el desarrollo de industria it es un camino que recien comienza para mi y es un desafio que emprendo con mucho entusiasmo de ampliar mi conocimiento",
+	"acerca": "Disfruto trabajar con el código ,soy capaz de adaptarme a un equipo colaborativo y sobre todo tengo ganas de aportar y crecer constantemente. Soy prolijo con mi trabajo y me esfuerzo en entregar lo mejor de mi constantemente",
 	"name": "Jorge Gabriel Medina",
 	"age": 31,
 	"nationality": "Argentina",
 	"home": "Neuquen",
+	"img_perfil":"../../../assets/profile-img.jpg" ,
 	"banner": "assets/IMG  BANNER FONDO.png",
 	"namebanner": "GABRIEL ",
 	"lastnamebanner": "MEDINA",

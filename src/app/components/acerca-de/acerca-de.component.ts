@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { PorfolioService } from 'src/app/services/porfolio.service';
+import * as AOS from 'aos';
 @Component({
   selector: 'app-acerca-de',
   templateUrl: './acerca-de.component.html',
@@ -25,6 +26,10 @@ form:any;
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
       this.miPorfolio=data;
+    });
+    AOS.init({
+      offset:400,
+      duration: 1900,
     });
   }
 
