@@ -1,4 +1,4 @@
-
+/*
 .baner img{
   display: flex;
     padding: 0px;
@@ -55,4 +55,21 @@ font-weight:normal
   color: rgb(93, 186, 240);
 }
 
+*/
 
+.dark-bg{ 
+  display: flex;
+  height: 500px;
+  margin-bottom:50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  background-size: cover;
+  background-image: url(../../../assets/BANNER.png);
+  background-attachment: fixed;
+  background-position: center;
+}
+#hero.container{
+
+  height: 100vh;
+}
