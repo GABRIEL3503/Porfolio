@@ -1,0 +1,12 @@
+public class Persona
+{
+	private Stirng nombre;
+	provate int edad
+	private Color colorRemera;
+
+
+	public void setNombre(string valornombre){
+	nomnbre=valornombre
+	}
+
+}

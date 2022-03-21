@@ -41,35 +41,54 @@ font-weight:normal
     top: 35%;
     left: 15%;
     
+}*/
+
+
+.text {
+ 
+  text-shadow: rgb(48, 53, 56) 0 -1px 4px, rgb(80, 150, 207) 0 -2px 10px, #0059ff 0 -10px 20px, rgb(0, 132, 255) 0 -18px 40px;
+  color: aliceblue;
+  
+  padding-left: 127px;
 }
-.text{
-  font-size:32px;
+
+.btn-edit {
+  padding-left: 187px;
+
 }
 
 .editar {
+
   color: #fafafa;
   background-color: rgba(255, 255, 255, 0);
   border: 0px;
 }
+
 .editar:hover {
   color: rgb(93, 186, 240);
 }
 
-*/
 
-.dark-bg{ 
+
+
+
+#parallax-image {
   display: flex;
-  height: 500px;
-  margin-bottom:50px;
-  background-size: cover;
+  padding: 0px;
+  padding-top: 7px;
+  width: 100%;
+  background-image: url(../../../assets/BANNER.jpg);
+  height: auto;
   background-repeat: no-repeat;
- 
-  background-size: cover;
-  background-image: url(../../../assets/BANNER.png);
   background-attachment: fixed;
   background-position: center;
 }
-#hero.container{
 
-  height: 100vh;
+h1 {
+  font-size: 50px
+}
+
+.container
+{
+  display: flex;
 }

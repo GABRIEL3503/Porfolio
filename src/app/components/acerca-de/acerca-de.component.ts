@@ -8,7 +8,7 @@ import * as AOS from 'aos';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit{
-miPorfolio:any;
+miPorfolio:any={};
 usuarioAutenticado: boolean =true;
 form:any;
 
@@ -24,12 +24,12 @@ form:any;
    }
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
+    this.datosPorfolio.obtenerDatos().subscribe((data: any) =>{
       this.miPorfolio=data;
     });
     AOS.init({
       offset:400,
-      duration: 1900,
+      duration: 1500,
     });
   }
 

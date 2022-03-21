@@ -11,7 +11,7 @@ section{
 }.textDescript{
     background-color: #4dc1f736;
     }
-    .a{
+    .section-title{
         color: rgb(253, 253, 253);
         text-shadow: rgb(62, 160, 224) 0 -1px 4px,
          rgb(80, 150, 207) 0 -2px 10px,
@@ -69,12 +69,12 @@ P{
       display:flex;
       justify-content:center;
       align-items: center;
-      background:rgba(134, 207, 255, 0.527);
+      background:rgba(255, 255, 255, 0.555);
       box-shadow:15px rgb(255, 255, 255);
       backdrop-filter: blur(15px);
-      border: 6px solid rgb(255, 255, 255);
+      border: 8px solid rgb(34, 56, 248); 
       z-index: 10;
-      border-radius: 10px;
+    
     }
     .percent{
       position: relative;
@@ -131,7 +131,7 @@ P{
       font-size: 18;
       letter-spacing:1px;
       text-transform: uppercase;
-      box-shadow: 0 15px 35px rgba(255, 255, 255, 0.452);
+     
       z-index:1;
       pointer-events:none;
       transition:bottom  0.5s, z-index 0s, transform 0.5s, 
@@ -154,8 +154,23 @@ P{
     
     }
     .card:nth-child(1) .sv circle:nth-child(2){
-      stroke-dashoffset: calc(440px - (440px * 10) / 100) ;
+      stroke-dashoffset: calc(440px - (440px * 100) / 100) ;
+    }
+    .card:nth-child(2) .sv circle:nth-child(2){
+      stroke-dashoffset: calc(440px - (440px * 95) / 100) ;
+    }
+    .card:nth-child(3) .sv circle:nth-child(2){
+      stroke-dashoffset: calc(440px - (440px * 95) / 100) ;
+    }
+    .card:nth-child(4) .sv circle:nth-child(2){
+      stroke-dashoffset: calc(440px - (440px * 90) / 100) ;
+    }
+    .card:nth-child(5) .sv circle:nth-child(2){
+      stroke-dashoffset: calc(440px - (440px * 85) / 100) ;
+    }
+    .card:nth-child(6) .sv circle:nth-child(2){
+      stroke-dashoffset: calc(440px - (440px * 97) / 100) ;
     }
     svg{
-     color: #8fd6ff
+     color: #9ed5f5
     }
