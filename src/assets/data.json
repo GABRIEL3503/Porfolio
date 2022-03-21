@@ -1,7 +1,7 @@
 {
 	"acerca": "Disfruto trabajar con el código, soy capaz de adaptarme a un grupo colaborativo, y sobre todo, tengo ganas de aportar y crecer constantemente! Soy prolijo con mi trabajo y me esfuerzo en entregar lo mejor de mi.Me gusta trabajar en entornos donde la metodologia prioriza el valor humano,y la comunicación con el equipo.Quiero sumar experiencia y aportar para generar valor al proyecto.",
 	"name": "Jorge Gabriel Medina",
-	"age": 31,
+	"age": 32,
 	"nationality": "Argentina",
 	"home": "Neuquen",
 	"img_perfil":"../../../assets/profile-img.jpg" ,
@@ -10,6 +10,10 @@
 	"lastnamebanner": "MEDINA",
 	"rol1": "FULL STACK",
 	"rol2": "DEVELOPER",
+	"mail":"gabriel_jm_3@hotmail.com",
+	"tel":"0299 6134693",
+	"disponibilidad":"Full Time",
+
 
 
 

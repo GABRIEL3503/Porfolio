@@ -20,6 +20,10 @@ form:any;
       age:["", [Validators.required]],
       nationality:["",[Validators.required]],
       residence:["",[Validators.required]],
+    mail:["",[Validators.required]],
+    tel:["",[Validators.required]],
+    disponibilidad:["",[Validators.required]]
+
     })
    }
 
@@ -57,7 +61,17 @@ form:any;
  get nationality(){
    return this.form.get("nationality")
  }
+
  get residence(){
-   return this.form.get("residence")
- }
+  return this.form.get("residence")
+}
+get mail(){
+  return this.form.get("mail")
+}
+get tel(){
+  return this.form.get("tel")
+}
+get disponibilidad(){
+  return this.form.get("disponibilidad")
+}
 }

@@ -27,6 +27,14 @@
         <h1>Residencia:</h1>
         <h3>{{miPorfolio.home}} </h3>
     </div>
+    <div class="flex-item">
+      <h1>E-mail:</h1>
+      <h3>{{miPorfolio.mail}} </h3>
+        <h1>Tel:</h1>
+        <h3>{{miPorfolio.tel}}</h3> 
+        <h1>Disponibilidad:</h1>
+        <h3>{{miPorfolio.disponibilidad}} </h3>
+    </div>
         <div data-aos="fade-left " data-aos-easing="ease-in-sine"  
         data-aos-offset="500" class=" flex-item">
           <img [src]="miPorfolio.img_perfil" alt="" class=" profile img-fluid rounded-circle">
@@ -101,6 +109,37 @@
               </div>
               </div>
           </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Email</label>
+            <input type="" class="form-control" id="residence" formControlName= "mail">
+            <div *ngIf="mail.invalid && (mail.dirty || mail.touched)"
+              class="alert">
+              <div *ngIf="mail.errors?.['required']" class="text-danger">
+                Email is required.
+              </div>
+              </div>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Telefono</label>
+            <input type="" class="form-control" id="residence" formControlName= "tel">
+            <div *ngIf="tel.invalid && (tel.dirty || tel.touched)"
+              class="alert">
+              <div *ngIf="tel.errors?.['required']" class="text-danger">
+                Telefono is required.
+              </div>
+              </div>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Disponibilidad</label>
+            <input type="" class="form-control" id="residence" formControlName= "disponibilidad">
+            <div *ngIf="disponibilidad.invalid && (disponibilidad.dirty || disponibilidad.touched)"
+              class="alert">
+              <div *ngIf="disponibilidad.errors?.['required']" class="text-danger">
+                Disponibilidad is required.
+              </div>
+              </div>
+          </div>
+          
         </form>
       </div>
       <div class="modal-footer">

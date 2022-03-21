@@ -59,8 +59,10 @@ P{
       text-align: center;
       z-index: 10;
       margin: 20px 20px 60px;
+      border-radius: 37px;
     }
     .cont .card .box{
+      border-radius: 18px;
       position: absolute;
       top: 0;
       left: 0;
