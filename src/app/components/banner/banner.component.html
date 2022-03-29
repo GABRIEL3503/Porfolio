@@ -1,160 +1,38 @@
-<!--<div class="contenedor baner" > 
-    <img [src]="miPorfolio.banner" alt="Banner gabriel medina full stak"  />
-    
-    <div class="centrado">
-      <div class="btn">
-        <button *ngIf="usuarioAutenticado"  class="editar"data-bs-toggle="modal" data-bs-target="#modalBanner">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-              <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-            </svg>
-          
-          </button >
-          <button class="editar" *ngIf="usuarioAutenticado"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-          </svg></button> 
-         </div>
-  <div class="text">
-       {{miPorfolio.namebanner}} <br> <span> {{miPorfolio.lastnamebanner}}</span>
-        <br> <br>
-        {{miPorfolio.rol1}} <br> 
-        <span>
-            {{miPorfolio.rol2}}
-        </span> 
-      </div>
-    </div>
-  </div>
- 
-<!-- Modal-->
-<!--
-<div class="modal fade" id="modalBanner" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Editar Banner</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form [formGroup]= 'form'>
-
-                <div class="mb-3">
-                    <label for="nombreBanner1" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" id="nombreBanner1" formControlName= "nombreBanner1">
-                    
-                    <div *ngIf="nombreBanner1.invalid && (nombreBanner1.dirty || nombreBanner1.touched)"
-                    class="alert">
-                    <div *ngIf="nombreBanner1.errors?.['required']" class="text-danger">
-                    Name is required.
-                    </div>
-                    </div>
-
-                </div>
-
-                    <div class="mb-3">
-                    <label for="apellidooBanner1" class="form-label">Apellido</label>
-                  <input type="email" class="form-control" id="apellidooBanner1"  formControlName= "apellidooBanner1">
-
-                  <div *ngIf="apellidooBanner1.invalid && (apellidooBanner1.dirty || apellidooBanner1.touched)"
-                  class="alert">
-                  <div *ngIf="apellidooBanner1.errors?.['required']" class="text-danger">
-                  Last Name is required.
-                  </div>
-                  </div>
-                    </div>
-
-                    <div class="mb-3">
-                  <label for="posicionBanner1" class="form-label">Posicion</label>
-                  <input type="" class="form-control" 
-                  formControlName= "posicionBanner1" id="posicionBanner1">
-                    
-                    <div *ngIf="posicionBanner1.invalid && (posicionBanner1.dirty || posicionBanner1.touched)"
-                    class="alert">
-                    <div *ngIf="posicionBanner1.errors?.['required']" class="text-danger">
-                    Position is required.
-                    </div>
-                    </div>
-                  </div>
-                    <div class="mb-3">
-                  <label for="posicionBanner2" class="form-label">Posicion2</label>
-                  <input type="" class="form-control" id="posicionBanner2"  formControlName= "posicionBanner2">
-
-                  <div *ngIf="posicionBanner2.invalid && (posicionBanner2.dirty || posicionBanner2.touched)"
-                  class="alert">
-                  <div *ngIf="posicionBanner2.errors?.['required']" class="text-danger">
-                  Position is required.
-                  </div>
-                    </div>
-                    </div>
-
-                    <div class="mb-3">
-                  <label for="UrlDeLaImagen" class="form-label"> Url de la Imagen</label>
-                  <input type="" class="form-control" id="UrlDeLaImagen"   formControlName= "UrlDeLaImagen" >
-
-                  <div *ngIf="UrlDeLaImagen.invalid && (UrlDeLaImagen.dirty || UrlDeLaImagen.touched)"
-                  class="alert">
-                  <div *ngIf="UrlDeLaImagen.errors?.['required']"class="text-danger">
-                  Url is required.
-                  </div>
-                  <div *ngIf="UrlDeLaImagen.errors?.['pattern']"class="text-danger">
-                    Format Url is  not valid.
-                    </div>
-                    </div>
-                </div>
-              </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" id ="cerrarModalBanner"class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
-          <button type="button" class="btn btn-primary" (click)="guardarBanner()">Guardar</button>
-        </div>
-      </div>
-    </div>
-  </div>
--->
-<!--dosss-->
-<!--
-<section class="dark-bg" id="hero">
-  <div class="container">
-    <div class="d-flex">
-      <h1>
-         {{miPorfolio.namebanner}} <br> <span> {{miPorfolio.lastnamebanner}}</span>
-        <br> <br>
-        {{miPorfolio.rol1}} <br> 
-        <span>
-            {{miPorfolio.rol2}}
-        </span> 
-      </h1>
-    </div>
-  </div>
-</section> -->
-
-
-
+<!--imagen de fondo banner paralax-->
 <section id="parallax-image">
-      <h1>
-        <div class="btn-edit">
-          <button *ngIf="usuarioAutenticado" class="editar" data-bs-toggle="modal" data-bs-target="#modalBanner">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill"
-              viewBox="0 0 16 16">
-              <path
-                d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
-            </svg>
-          </button>
-          <button class="editar" *ngIf="usuarioAutenticado"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-              <path
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-            </svg></button>
-        </div>
-        <div class="text"  style="font-size:4vw;">
-          {{miPorfolio.namebanner}} <br> <span> {{miPorfolio.lastnamebanner}}</span>
-          <br> <br>
-          {{miPorfolio.rol1}} <br>
-          <span>
-            {{miPorfolio.rol2}}
-          </span>
-        </div>
-      </h1>
+  <h1>
+    <div class="btn-edit">
+      <button *ngIf="usuarioAutenticado" class="editar" data-bs-toggle="modal" data-bs-target="#modalBanner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+        </svg>
+        <!--botom editar-->
+      </button>
+      <button class="editar" *ngIf="usuarioAutenticado"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+        </svg></button>
+    </div>
+        <!--texto sobre el banner-->
+    <div class="text" style="font-size:4vw;">
+      {{miPorfolio.namebanner}}
+      <br>
+      <span>
+        {{miPorfolio.lastnamebanner}}
+      </span>
+      <br><br>
+      {{miPorfolio.rol1}}
+      <br>
+      <span>
+        {{miPorfolio.rol2}}
+      </span>
+    </div>
+  </h1>
 </section>
-
+<!--modal formulario de edicion y validaciones-->
 <div class="modal fade" id="modalBanner" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
   aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -165,34 +43,27 @@
       </div>
       <div class="modal-body">
         <form [formGroup]='form'>
-
           <div class="mb-3">
             <label for="nombreBanner1" class="form-label">Nombre</label>
             <input type="email" class="form-control" id="nombreBanner1" formControlName="nombreBanner1">
-
             <div *ngIf="nombreBanner1.invalid && (nombreBanner1.dirty || nombreBanner1.touched)" class="alert">
               <div *ngIf="nombreBanner1.errors?.['required']" class="text-danger">
                 Name is required.
               </div>
             </div>
-
           </div>
-
           <div class="mb-3">
             <label for="apellidooBanner1" class="form-label">Apellido</label>
             <input type="email" class="form-control" id="apellidooBanner1" formControlName="apellidooBanner1">
-
             <div *ngIf="apellidooBanner1.invalid && (apellidooBanner1.dirty || apellidooBanner1.touched)" class="alert">
               <div *ngIf="apellidooBanner1.errors?.['required']" class="text-danger">
                 Last Name is required.
               </div>
             </div>
           </div>
-
           <div class="mb-3">
             <label for="posicionBanner1" class="form-label">Posicion</label>
             <input type="" class="form-control" formControlName="posicionBanner1" id="posicionBanner1">
-
             <div *ngIf="posicionBanner1.invalid && (posicionBanner1.dirty || posicionBanner1.touched)" class="alert">
               <div *ngIf="posicionBanner1.errors?.['required']" class="text-danger">
                 Position is required.
@@ -202,18 +73,15 @@
           <div class="mb-3">
             <label for="posicionBanner2" class="form-label">Posicion2</label>
             <input type="" class="form-control" id="posicionBanner2" formControlName="posicionBanner2">
-
             <div *ngIf="posicionBanner2.invalid && (posicionBanner2.dirty || posicionBanner2.touched)" class="alert">
               <div *ngIf="posicionBanner2.errors?.['required']" class="text-danger">
                 Position is required.
               </div>
             </div>
           </div>
-
           <div class="mb-3">
             <label for="UrlDeLaImagen" class="form-label"> Url de la Imagen</label>
             <input type="" class="form-control" id="UrlDeLaImagen" formControlName="UrlDeLaImagen">
-
             <div *ngIf="UrlDeLaImagen.invalid && (UrlDeLaImagen.dirty || UrlDeLaImagen.touched)" class="alert">
               <div *ngIf="UrlDeLaImagen.errors?.['required']" class="text-danger">
                 Url is required.
@@ -225,6 +93,7 @@
           </div>
         </form>
       </div>
+      <!--boton cerrar guardar-->
       <div class="modal-footer">
         <button type="button" id="cerrarModalBanner" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
         <button type="button" class="btn btn-primary" (click)="guardarBanner()">Guardar</button>

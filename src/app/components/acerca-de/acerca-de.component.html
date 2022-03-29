@@ -1,53 +1,62 @@
 <section id="acerca">
-  
-    <h1><span class="font1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right-square-fill" viewBox="0  16 16">
-      <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"/>
-    </svg>ACERCA DE MI</span>    
-      <button class="editar" *ngIf="usuarioAutenticado" data-bs-toggle="modal" data-bs-target="#modalAcerca" >
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-        <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+  <!-- Titulo -iconos -- botones-->
+  <h1><span class="font1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+        class="bi bi-arrow-up-right-square-fill" viewBox="0  16 16">
+        <path
+          d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z" />
+      </svg>ACERCA DE MI</span>
+      
+    <button class="editar" *ngIf="usuarioAutenticado" data-bs-toggle="modal" data-bs-target="#modalAcerca">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
       </svg>
-    
     </button>
-    <button *ngIf="usuarioAutenticado" class="editar" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-    </svg></button>
-    <br>  
-  </h1>
-    <h3>{{miPorfolio.acerca}}</h3>
+    <button *ngIf="usuarioAutenticado" class="editar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+        fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+      </svg></button>
     <br>
-    <div class="flex-container">
-      <div class="flex-item">
-      <h1>Nombre:</h1>
+    <!-- Modal --> <!-- Interpolacion -->
+  </h1>
+  <br>
+  <h3>{{miPorfolio.acerca}}</h3>
+  <br>
+  <div class="flex-container">
+    <div class="flex-item">
+      <h1>Nombre</h1>
       <h3>{{miPorfolio.name}} </h3>
-        <h1>Edad:</h1>
-        <h3>{{miPorfolio.age}}</h3> 
-        <h1>Nacionalidad:</h1>
-        <h3>{{miPorfolio.nationality}}</h3>
-        <h1>Residencia:</h1>
-        <h3>{{miPorfolio.home}} </h3>
+      <h1>Edad</h1>
+      <h3>{{miPorfolio.age}}</h3>
+      <h1>Nacionalidad</h1>
+      <h3>{{miPorfolio.nationality}}</h3>
+      <h1>Residencia</h1>
+      <h3>{{miPorfolio.home}} </h3>
     </div>
     <div class="flex-item">
-      <h1>E-mail:</h1>
+      <h1>E-mail</h1>
       <h3>{{miPorfolio.mail}} </h3>
-        <h1>Tel:</h1>
-        <h3>{{miPorfolio.tel}}</h3> 
-        <h1>Disponibilidad:</h1>
-        <h3>{{miPorfolio.disponibilidad}} </h3>
-        <h1>Pasatiempos:</h1>
-        <h3>{{miPorfolio.pasatiempos}} </h3>
+      <h1>Tel</h1>
+      <h3>{{miPorfolio.tel}}</h3>
+      <h1>Disponibilidad</h1>
+      <h3>{{miPorfolio.disponibilidad}} </h3>
+      <h1>Pasatiempos</h1>
+      <h3>{{miPorfolio.pasatiempos}} </h3>
     </div>
-        <div data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0" class=" flex-item">
-          <img [src]="miPorfolio.img_perfil" alt="" class=" profile img-fluid rounded-circle">
-          </div>
-        </div>
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+      class=" flex-item">
+      <!-- link imagen de perfil -->
+      <img [src]="miPorfolio.img_perfil" alt="foto de perfil" class=" profile img-fluid rounded-circle">
+    </div>
+  </div>
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="modalAcerca" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!-- fomrulario y validaciones -->
+<div class="modal fade" id="modalAcerca" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -55,111 +64,95 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form [formGroup]= 'form'>
-
+        <form [formGroup]='form'>
           <div class="mb-3">
             <label for="" class="form-label">Posición</label>
-            <input type="" class="form-control" id="posicionAcercaDe" formControlName= "posicionAcercaDe">
-            <div *ngIf="posicionAcercaDe.invalid && (posicionAcercaDe.dirty || posicionAcercaDe.touched)"
-            class="alert">
-            <div *ngIf="posicionAcercaDe.errors?.['required']" class="text-danger">
-            Position is required.
-            </div>
+            <input type="" class="form-control" id="posicionAcercaDe" formControlName="posicionAcercaDe">
+            <div *ngIf="posicionAcercaDe.invalid && (posicionAcercaDe.dirty || posicionAcercaDe.touched)" class="alert">
+              <div *ngIf="posicionAcercaDe.errors?.['required']" class="text-danger">
+                Posición is required.
+              </div>
             </div>
           </div>
-
           <div class="mb-3">
             <label for="" class="form-label">Nombre</label>
-            <input type="" class="form-control" id="name" formControlName= "name">
-
-            <div *ngIf="name.invalid && (name.dirty || name.touched)"
-            class="alert">
-            <div *ngIf="name.errors?.['required']" class="text-danger">
-            Name is required.
-            </div>
+            <input type="" class="form-control" id="name" formControlName="name">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+              <div *ngIf="name.errors?.['required']" class="text-danger">
+                Nombre es requerido.
+              </div>
             </div>
           </div>
-
           <div class="mb-3">
             <label for="" class="form-label">Edad</label>
-            <input type="" class="form-control" id="age" formControlName= "age">
-
-            <div *ngIf="age.invalid && (age.dirty || age.touched)"
-            class="alert">
-            <div *ngIf="age.errors?.['required']" class="text-danger">
-            Age is required.
-            </div>
+            <input type="" class="form-control" id="age" formControlName="age">
+            <div *ngIf="age.invalid && (age.dirty || age.touched)" class="alert">
+              <div *ngIf="age.errors?.['required']" class="text-danger">
+                Edad es requerida.
+              </div>
             </div>
           </div>
-
-            <div class="mb-3">
-              <label for="" class="form-label">Nacionalidad</label>
-              <input type="" class="form-control" id="nationality" formControlName= "nationality">
-              <div *ngIf="nationality.invalid && (nationality.dirty || nationality.touched)"
-              class="alert">
+          <div class="mb-3">
+            <label for="" class="form-label">Nacionalidad</label>
+            <input type="" class="form-control" id="nationality" formControlName="nationality">
+            <div *ngIf="nationality.invalid && (nationality.dirty || nationality.touched)" class="alert">
               <div *ngIf="nationality.errors?.['required']" class="text-danger">
-                Nationality is required.
+                Nacionalidad es requerida.
               </div>
-              </div>
+            </div>
           </div>
 
           <div class="mb-3">
             <label for="" class="form-label">Residencia</label>
-            <input type="" class="form-control" id="residence" formControlName= "residence">
-            <div *ngIf="residence.invalid && (residence.dirty || residence.touched)"
-              class="alert">
+            <input type="" class="form-control" id="residence" formControlName="residence">
+            <div *ngIf="residence.invalid && (residence.dirty || residence.touched)" class="alert">
               <div *ngIf="residence.errors?.['required']" class="text-danger">
-                Residence is required.
+                Residencia es requerida.
               </div>
-              </div>
+            </div>
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Email</label>
-            <input type="" class="form-control" id="residence" formControlName= "mail">
-            <div *ngIf="mail.invalid && (mail.dirty || mail.touched)"
-              class="alert">
+            <input type="" class="form-control" id="residence" formControlName="mail">
+            <div *ngIf="mail.invalid && (mail.dirty || mail.touched)" class="alert">
               <div *ngIf="mail.errors?.['required']" class="text-danger">
-                Email is required.
+                Email es requerido.
               </div>
-              </div>
+            </div>
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Telefono</label>
-            <input type="" class="form-control" id="residence" formControlName= "tel">
-            <div *ngIf="tel.invalid && (tel.dirty || tel.touched)"
-              class="alert">
+            <input type="" class="form-control" id="residence" formControlName="tel">
+            <div *ngIf="tel.invalid && (tel.dirty || tel.touched)" class="alert">
               <div *ngIf="tel.errors?.['required']" class="text-danger">
-                Telefono is required.
+                Telefono es requerido.
               </div>
-              </div>
+            </div>
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Disponibilidad</label>
-            <input type="" class="form-control" id="residence" formControlName= "disponibilidad">
-            <div *ngIf="disponibilidad.invalid && (disponibilidad.dirty || disponibilidad.touched)"
-              class="alert">
+            <input type="" class="form-control" id="residence" formControlName="disponibilidad">
+            <div *ngIf="disponibilidad.invalid && (disponibilidad.dirty || disponibilidad.touched)" class="alert">
               <div *ngIf="disponibilidad.errors?.['required']" class="text-danger">
-                Disponibilidad is required.
+                Disponibilidad es requerido.
               </div>
-              </div>
+            </div>
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Pasatiempos</label>
-            <input type="" class="form-control" id="residence" formControlName= "pasatiempos">
-            <div *ngIf="pasatiempos.invalid && (pasatiempos.dirty || pasatiempos.touched)"
-              class="alert">
+            <input type="" class="form-control" id="residence" formControlName="pasatiempos">
+            <div *ngIf="pasatiempos.invalid && (pasatiempos.dirty || pasatiempos.touched)" class="alert">
               <div *ngIf="pasatiempos.errors?.['required']" class="text-danger">
-                Pasatiempos is required.
+                Pasatiempos es requerido.
               </div>
-              </div>
+            </div>
           </div>
-          
+
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" id="cerrarModalAcerca" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
-        <button type="button" class="btn btn-primary" 
-        (click)="guardarAcerca()">Guardar</button>
+        <button type="button" class="btn btn-primary" (click)="guardarAcerca()">Guardar</button>
       </div>
     </div>
   </div>

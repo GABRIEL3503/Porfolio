@@ -1,3 +1,9 @@
+h1{
+    color:rgb(245, 245, 245);
+      background-color:#062aa133;  
+      padding:4px;
+      border-radius: 6px;
+  }
 section{  
     border-radius: 0px;
     border-width: 1px;
@@ -11,12 +17,7 @@ section{
     background: -moz-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #1d7fcf 100%);
     background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
 }
-h1{
-    color:rgb(245, 245, 245);
-      background-color:#062aa133;  
-      padding:4px;
-      border-radius: 6px;;
-  }
+
 
     .container{
         padding: 20px;
