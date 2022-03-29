@@ -22,7 +22,8 @@ form:any;
       residence:["",[Validators.required]],
     mail:["",[Validators.required]],
     tel:["",[Validators.required]],
-    disponibilidad:["",[Validators.required]]
+    disponibilidad:["",[Validators.required]],
+    pasatiempos:["",[Validators.required]]
 
     })
    }
@@ -73,5 +74,8 @@ get tel(){
 }
 get disponibilidad(){
   return this.form.get("disponibilidad")
+}
+get pasatiempos(){
+  return this.form.get("pasatiempos")
 }
 }

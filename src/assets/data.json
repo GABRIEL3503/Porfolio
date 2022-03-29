@@ -13,6 +13,7 @@
 	"mail":"gabriel_jm_3@hotmail.com",
 	"tel":"0299 6134693",
 	"disponibilidad":"Full Time",
+	"pasatiempos": "Mind Fullness, Trekking",
 
 	"experiencia":[{
 		"puesto":"Full Stack Developer",
@@ -32,7 +33,7 @@
         "end":"2021"
 	}, {
 		"school": "Argentina Programa-Yo Programo DESARROLLADOR  WEB FULLSTACK JR",
-		"img":  "assets/descarga.png",
+		"img":  "assets/descarga1.png",
         "career": " Participé y finalicé el programa diseñando  una pagina web porfolio responsiva completa",
         "start": "2021" ,
         "end":"2022"
@@ -46,7 +47,7 @@
 	},
 	{
 		"school": "INGLES",
-		"img":  "assets/descarga.png",
+		"img":  "assets/ingles.jpg",
         "career": " El ingles es un idioma que me gusta mucho y del cual intento aprender constantemente  leyendo docuemntacion charlando con personas nativas o viendo peliculas en su idioma original, aun me falta mucho por aprender para poder expresarme con fluidez y me encuentro dispuesto a hacerlo",
         "start": "2021" ,
         "end":"2022"

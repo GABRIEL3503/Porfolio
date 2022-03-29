@@ -32,7 +32,7 @@ P{
     justify-content: center;
     align-items: center;
     padding: 40px 0;
-    min-height: 100vh;
+    min-height: 55vh;
     background: #00a2ff50;
     
     }
@@ -47,19 +47,19 @@ P{
     
     }
     .cont{
-      width: 900px;
+      width: 1212px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
     }
     .cont .card{
       position:relative;
-      width: 250px;
+      width: 176px;
       height: 300px;
       text-align: center;
       z-index: 10;
       margin: 20px 20px 60px;
-      border-radius: 37px;
+      border-radius: 21px;
     }
     .cont .card .box{
       border-radius: 18px;
