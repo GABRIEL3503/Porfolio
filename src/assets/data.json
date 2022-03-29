@@ -14,25 +14,32 @@
 	"tel":"0299 6134693",
 	"disponibilidad":"Full Time",
 
-
+	"experiencia":[{
+		"puesto":"Full Stack Developer",
+		"empresa": "Aqui figuraria el nombre de tu empresa :)",
+		"desde": "Desde --/--/--",
+		"hasta": "Hasta --/--/--",
+		"img":  "assets/experiencia.jpg"
+	}],
+	
 
 
 	"education": [{
 		"school": "PATAGONIAN ACADEMY DIPLOMATURA PROGRAMACIÓN WEB FULL STACK",
-		"career": "Participe durenta 6 meses,no finalizé  la diplomatura, pero adquiri las bases que me premiten aprender nuevas erramientas y lenguajes con fluidez",
+		"career": "Participe durante 6 meses,no finalicé la diplomatura, pero adquiri las bases que me permiten aprender nuevas herramientas y lenguajes con fluidez",
         "img":  "assets/patagonian.png",
         "start": "2020",
         "end":"2021"
 	}, {
 		"school": "Argentina Programa-Yo Programo DESARROLLADOR  WEB FULLSTACK JR",
 		"img":  "assets/descarga.png",
-        "career": " Participé y finalizé del programa diseñando  una pagina web porfolio responsiva completa",
+        "career": " Participé y finalicé el programa diseñando  una pagina web porfolio responsiva completa",
         "start": "2021" ,
         "end":"2022"
         }, 
 	 {
 		"school": "UDEMY ",
-		"career": "Uno de las plataformas de calidad donde puedo saciar mi curiosidad y aprender nuevas tecnlogias",
+		"career": "Uno de las plataformas de calidad donde puedo saciar mi curiosidad y aprender nuevas tecnologias",
         "img": "assets/images.png",
         "start": "2021",
         "end":"2022"

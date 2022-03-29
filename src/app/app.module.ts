@@ -13,6 +13,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GraficosComponent } from './components/graficos/graficos.component';
 import { GaleryComponent } from './components/galery/galery.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { GaleryComponent } from './components/galery/galery.component';
     FooterComponent,
     GraficosComponent,
     GaleryComponent,
-    HabilidadesComponent
+    HabilidadesComponent,
+    ExperienciaComponent
   ],
   imports: [
     BrowserModule,
