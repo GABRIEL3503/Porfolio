@@ -58,3 +58,10 @@ svg {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+  h1{
+    color:rgb(245, 245, 245);
+      background-color:#062aa133;  
+      padding:4px;
+      border-radius: 6px;;
+  }

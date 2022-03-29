@@ -1,3 +1,11 @@
+#titulo{
+  
+    color:rgb(245, 245, 245);
+      background-color:#062aa133;  
+      padding:4px;
+      border-radius: 6px;;
+  
+}
 section{
   background: #1c47a4;
   background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);

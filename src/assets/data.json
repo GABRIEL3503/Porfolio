@@ -17,7 +17,7 @@
 
 	"experiencia":[{
 		"puesto":"Full Stack Developer",
-		"empresa": "Aqui figuraria el nombre de tu empresa :)",
+		"empresa": "Aqui puede ir el nombre de tu Empresa :)",
 		"desde": "Desde --/--/--",
 		"hasta": "Hasta --/--/--",
 		"img":  "assets/experiencia.jpg"
