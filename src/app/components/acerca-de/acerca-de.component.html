@@ -37,8 +37,10 @@
         <h1>Pasatiempos:</h1>
         <h3>{{miPorfolio.pasatiempos}} </h3>
     </div>
-        <div data-aos="fade-left " data-aos-easing="ease-in-sine"  
-        data-aos-offset="500" class=" flex-item">
+        <div data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" class=" flex-item">
           <img [src]="miPorfolio.img_perfil" alt="" class=" profile img-fluid rounded-circle">
           </div>
         </div>
@@ -138,6 +140,16 @@
               class="alert">
               <div *ngIf="disponibilidad.errors?.['required']" class="text-danger">
                 Disponibilidad is required.
+              </div>
+              </div>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Pasatiempos</label>
+            <input type="" class="form-control" id="residence" formControlName= "pasatiempos">
+            <div *ngIf="pasatiempos.invalid && (pasatiempos.dirty || pasatiempos.touched)"
+              class="alert">
+              <div *ngIf="pasatiempos.errors?.['required']" class="text-danger">
+                Pasatiempos is required.
               </div>
               </div>
           </div>

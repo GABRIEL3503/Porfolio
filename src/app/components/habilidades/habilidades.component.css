@@ -3,7 +3,7 @@ section{
   background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
   background: -moz-linear-gradient(left, #1e1ca4 0%, #2388CB 50%, #1d7fcf 100%);
   background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
-  border-radius: 0px;
+  border-radius: 10px;
   border-width: 1px;
   margin-bottom: 5px;
   padding: 20px;
@@ -59,7 +59,8 @@ P{
       text-align: center;
       z-index: 10;
       margin: 20px 20px 60px;
-      border-radius: 21px;
+      border:0px;
+      border-radius: 238px;
     }
     .cont .card .box{
       border-radius: 18px;
@@ -126,7 +127,7 @@ P{
       left:50%;
       transform: translate(-50%);
       text-align: center;
-      padding:30px 20px 10px;
+      padding:30px 10px 10px;
       background: rgb(20, 101, 250);
       border-radius:10px;
       font-weight: 800;
