@@ -1,12 +1,11 @@
-#titulo{
-  
-    color:rgb(245, 245, 245);
-      background-color:#062aa133;  
-      padding:4px;
-      border-radius: 6px;;
-  
+#titulo {
+  color: rgb(245, 245, 245);
+  background-color: #062aa133;
+  padding: 4px;
+  border-radius: 6px;
 }
-section{
+
+section {
   background: #1c47a4;
   background: -webkit-linear-gradient(left, #1c30a4 0%, #2388CB 50%, #2e80dd 100%);
   background: -moz-linear-gradient(left, #1e1ca4 0%, #2388CB 50%, #1d7fcf 100%);
@@ -16,172 +15,190 @@ section{
   margin-bottom: 5px;
   padding: 20px;
   margin: 7px 0px;
-}.textDescript{
-    background-color: #4dc1f736;
-    }
-    .section-title{
-        color: rgb(253, 253, 253);
-        text-shadow: rgb(62, 160, 224) 0 -1px 4px,
-         rgb(80, 150, 207) 0 -2px 10px,
-          #0059ff 0 -10px 20px, rgb(0, 132, 255) 0 -18px 40px;
-       
-    }
-P{
-    font-size:  18px;
-    color: rgb(253, 253, 253);
 }
-    h2{ 
-        font-size: 24px;
 
-    }
-    #progresBar{
-    position: relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-    min-height: 55vh;
-    background: #00a2ff50;
-    
-    }
-    #progresBar::before{
-      content: "";
-      position: absolute;
-      top: 45%;
-      left: 0;
-      width:100%;
-      height: 50px;
-      
-    
-    }
-    .cont{
-      width: 1212px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .cont .card{
-      position:relative;
-      width: 176px;
-      height: 300px;
-      text-align: center;
-      z-index: 10;
-      margin: 20px 20px 60px;
-      border:0px;
-      border-radius: 238px;
-    }
-    .cont .card .box{
-      border-radius: 18px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display:flex;
-      justify-content:center;
-      align-items: center;
-      background:rgba(255, 255, 255, 0.555);
-      box-shadow:15px rgb(255, 255, 255);
-      backdrop-filter: blur(15px);
-      border: 8px solid rgb(34, 56, 248); 
-      z-index: 10;
-    
-    }
-    .percent{
-      position: relative;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      z-index:100;
-    }
-    .percent .number{
-      position: absolute;
-      top:0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .sv{ 
-      position: relative;
-      width: 150px;
-      height: 150px;
-    
-    }
-    .sv circle {
-    width: 100%;
-    height: 100%;
-    fill: none;
-    stroke-width:10;
-    stroke: rgba(1, 26, 255, 0.247);
-    transform:translate(5px,5px);
-    stroke-linecap:round;
-    }
-    
-    .percent .number h2{
-      color: rgb(10, 35, 255);
-      font-weight: 700;
-     font-size:  50px;
-    }
-    .percent .number h2 span{
-      font-size:24px
-    }
-    .text{
-      position:absolute;
-      bottom: -42px;
-      left:50%;
-      transform: translate(-50%);
-      text-align: center;
-      padding:30px 10px 10px;
-      background: rgb(20, 101, 250);
-      border-radius:10px;
-      font-weight: 800;
-      font-size: 18;
-      letter-spacing:1px;
-      text-transform: uppercase;
-     
-      z-index:1;
-      pointer-events:none;
-      transition:bottom  0.5s, z-index 0s, transform 0.5s, 
-      padding 0.5s;
-      transition-delay: 0.5s, 0.5s, 0s,0.5s;
-      color: #ffffff
-    }
-    .card:hover .text{
-      transition-delay: 0s, 0.5s, 0.5s.5s ,0s;
-      bottom: -70px;
-      z-index:11;
-      transform:translateX(-50%) translateY(-50px);
-      padding: 10px 20px 10px;
-    }
-    
-    .sv circle:nth-child(2){
-    stroke: rgb(1, 69, 255);
-    stroke-dasharray: 440px;
-    stroke-dashoffset: 440px;
-    
-    }
-    .card:nth-child(1) .sv circle:nth-child(2){
-      stroke-dashoffset: calc(440px - (440px * 100) / 100) ;
-    }
-    .card:nth-child(2) .sv circle:nth-child(2){
-      stroke-dashoffset: calc(440px - (440px * 95) / 100) ;
-    }
-    .card:nth-child(3) .sv circle:nth-child(2){
-      stroke-dashoffset: calc(440px - (440px * 95) / 100) ;
-    }
-    .card:nth-child(4) .sv circle:nth-child(2){
-      stroke-dashoffset: calc(440px - (440px * 90) / 100) ;
-    }
-    .card:nth-child(5) .sv circle:nth-child(2){
-      stroke-dashoffset: calc(440px - (440px * 85) / 100) ;
-    }
-    .card:nth-child(6) .sv circle:nth-child(2){
-      stroke-dashoffset: calc(440px - (440px * 97) / 100) ;
-    }
-    svg{
-     color: #9ed5f5
-    }
+.textDescript {
+  background-color: #4dc1f736;
+}
+
+.section-title {
+  color: rgb(253, 253, 253);
+  text-shadow: rgb(62, 160, 224) 0 -1px 4px,
+    rgb(80, 150, 207) 0 -2px 10px,
+    #0059ff 0 -10px 20px, rgb(0, 132, 255) 0 -18px 40px;
+
+}
+
+P {
+  font-size: 18px;
+  color: rgb(253, 253, 253);
+}
+
+h2 {
+  font-size: 24px;
+
+}
+
+#progresBar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  min-height: 55vh;
+  background: #00a2ff50;
+}
+
+#progresBar::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.cont {
+  width: 1212px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cont .card {
+  position: relative;
+  width: 176px;
+  height: 300px;
+  text-align: center;
+  z-index: 10;
+  margin: 20px 20px 60px;
+  border: 0px;
+  border-radius: 238px;
+}
+
+.cont .card .box {
+  border-radius: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.555);
+  box-shadow: 15px rgb(255, 255, 255);
+  backdrop-filter: blur(15px);
+  border: 8px solid rgb(34, 56, 248);
+  z-index: 10;
+}
+
+.percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sv {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.sv circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke: rgba(1, 26, 255, 0.247);
+  transform: translate(5px, 5px);
+  stroke-linecap: round;
+}
+
+.percent .number h2 {
+  color: rgb(10, 35, 255);
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.percent .number h2 span {
+  font-size: 24px
+}
+
+.text {
+  position: absolute;
+  bottom: -42px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  padding: 30px 10px 10px;
+  background: rgb(20, 101, 250);
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 18;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  z-index: 1;
+  pointer-events: none;
+  transition: bottom 0.5s, z-index 0s, transform 0.5s,
+    padding 0.5s;
+  transition-delay: 0.5s, 0.5s, 0s, 0.5s;
+  color: #ffffff
+}
+
+.card:hover .text {
+  transition-delay: 0s, 0.5s, 0.5s.5s, 0s;
+  bottom: -70px;
+  z-index: 11;
+  transform: translateX(-50%) translateY(-50px);
+  padding: 10px 20px 10px;
+}
+
+.sv circle:nth-child(2) {
+  stroke: rgb(1, 69, 255);
+  stroke-dasharray: 440px;
+  stroke-dashoffset: 440px;
+
+}
+
+.card:nth-child(1) .sv circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 100) / 100);
+}
+
+.card:nth-child(2) .sv circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 95) / 100);
+}
+
+.card:nth-child(3) .sv circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 95) / 100);
+}
+
+.card:nth-child(4) .sv circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 90) / 100);
+}
+
+.card:nth-child(5) .sv circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 85) / 100);
+}
+
+.card:nth-child(6) .sv circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 97) / 100);
+}
+
+svg {
+  color: #9ed5f5
+}

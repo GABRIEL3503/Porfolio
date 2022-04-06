@@ -2,6 +2,7 @@
 <section id="parallax-image">
   <h1>
     <div class="btn-edit">
+      <!--modal edicion-->
       <button *ngIf="usuarioAutenticado" class="editar" data-bs-toggle="modal" data-bs-target="#modalBanner">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill"
           viewBox="0 0 16 16">
@@ -93,7 +94,7 @@
           </div>
         </form>
       </div>
-      <!--boton cerrar guardar-->
+      <!--boton cerrar-->
       <div class="modal-footer">
         <button type="button" id="cerrarModalBanner" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
         <button type="button" class="btn btn-primary" (click)="guardarBanner()">Guardar</button>

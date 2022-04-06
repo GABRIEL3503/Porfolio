@@ -6,9 +6,7 @@ import * as AOS from 'aos';
   styleUrls: ['./graficos.component.css']
 })
 export class GraficosComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit(): void {
     AOS.init({
       offset:400,
